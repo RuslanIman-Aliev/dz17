@@ -128,6 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="17dz.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="Library.cpp" />
+    <ClCompile Include="Magazine.cpp" />
+    <ClCompile Include="Publication.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Book.h" />
+    <ClInclude Include="Library.h" />
+    <ClInclude Include="Magazine.h" />
+    <ClInclude Include="Publication.h" />
+    <ClInclude Include="PublicationException.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
