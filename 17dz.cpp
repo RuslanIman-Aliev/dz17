@@ -2,10 +2,27 @@
 //
 
 #include <iostream>
-
+#include"Book.h"
+#include"Library.h"
+#include"Magazine.h"
+#include"Publication.h"
+#include"PublicationException.h"
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    try {
+        Book p("", "afh", 1990, "resume");
+        p.show();
+    }
+    catch (PublicationException* m) {
+        cout << "Message: " << m->showMessage() << endl;
+    }
+    try {
+        Publication a("", "", 0);
+    }
+    catch (EditionYearException* m) {
+        cout << "Message: " << m->showMessage() << endl;
+    }
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
